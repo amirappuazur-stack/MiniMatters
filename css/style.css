@@ -218,7 +218,7 @@ nav a:hover::after{
 
     min-height:100vh;
 
-    background:url("../assets/hero.webp") center top/cover no-repeat;
+    background:url("../assets/hero.webp") center center/cover no-repeat;
 
     display:flex;
 
@@ -860,17 +860,11 @@ nav{
 
 nav ul{
 
-    gap:12px;
+    gap:20px;
 
-    flex-wrap:nowrap;
+    flex-wrap:wrap;
 
-    overflow-x:auto;
-
-    justify-content:flex-start;
-
-    width:100%;
-
-    padding:0 10px;
+    justify-content:center;
 
 }
 
@@ -924,19 +918,24 @@ section{
    Mobile
 ========================== */
 
+@media (max-width:768px){
+
+.logo{
+
+    font-size:28px;
+
+}
+
 .hero{
 
-    min-height:100svh;
+    min-height:100vh;
 
     background-position:center center;
 
-    padding:130px 20px 60px;
-
-    align-items:center;
-
-    text-align:center;
+    padding:150px 20px 80px;
 
 }
+
 .hero-content{
 
     width:100%;
